@@ -1,0 +1,126 @@
+<div class="grid mt-2">
+  <div class="col-12">
+    <p-panel header="Novo Lançamento">
+      <form [formGroup]="form">
+      <div class="grid mt-1">
+        <div class="col-2">
+          <span class="p-float-label">
+            <p-dropdown [options]="tipos" optionLabel="name" formControlName="tipo"></p-dropdown>
+            <label for="float-input">Tipo</label>
+          </span>
+        </div>
+        <div class="col-2">
+          <span class="p-float-label">
+            <p-dropdown [options]="subTipos" optionLabel="name" formControlName="subTipo"></p-dropdown>
+            <label for="float-input">Sub-Tipo</label>
+          </span>
+        </div>
+        <div class="col-3">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">R$</span>
+            <input type="text" pInputText placeholder="Valor" formControlName="valor"/>
+            <span class="p-inputgroup-addon">.00</span>
+          </div>
+        </div>
+        <div class="col-5">
+          <span class="p-float-label">
+            <p-calendar inputId="data" formControlName="data"></p-calendar>
+            <label for="data">Data</label>
+          </span>
+        </div>
+        <div class="col-12">
+          <p-splitButton
+            label="Save"
+            icon="pi pi-check"
+            (onClick)="save()"
+            [model]="buttonOptions"
+          ></p-splitButton>
+        </div>
+      </div>
+    </form>
+    </p-panel>
+
+    <div class="grid mt-2 p-0">
+
+      <div class="col-3">
+        <p-card>
+          <div class="grid">
+            <div class="col-9">
+              Entradas
+            </div>
+            <div class="col-3">
+              <i class="pi pi-money-bill" style="font-size: 1.5rem"></i>
+            </div>
+            <div class="col-12">
+              <!--{{valorEntradas | currency: {pt-BR | BRL }}} -->
+              R$ 5000,00
+            </div>
+            <div class="col-12">
+              %52+ desde o último mês
+            </div>
+          </div>
+        </p-card>
+      </div>
+
+      <div class="col-3">
+        <p-card>
+          <div class="grid">
+            <div class="col-9">
+              Entradas
+            </div>
+            <div class="col-3">
+              <i class="pi pi-money-bill" style="font-size: 1.5rem"></i>
+            </div>
+            <div class="col-12">
+              <!--{{valorEntradas | currency: {pt-BR | BRL }}} -->
+              R$ 5000,00
+            </div>
+            <div class="col-12">
+              %52+ desde o último mês
+            </div>
+          </div>
+        </p-card>
+      </div>
+
+      <div class="col-3">
+        <p-card>
+          <div class="grid">
+            <div class="col-9">
+              Entradas
+            </div>
+            <div class="col-3">
+              <i class="pi pi-money-bill" style="font-size: 1.5rem"></i>
+            </div>
+            <div class="col-12">
+              <!--{{valorEntradas | currency: {pt-BR | BRL }}} -->
+              R$ 5000,00
+            </div>
+            <div class="col-12">
+              %52+ desde o último mês
+            </div>
+          </div>
+        </p-card>
+      </div>
+
+      <div class="col-3">
+        <p-card>
+          <div class="grid">
+            <div class="col-9">
+              Entradas
+            </div>
+            <div class="col-3">
+              <i class="pi pi-money-bill" style="font-size: 1.5rem"></i>
+            </div>
+            <div class="col-12">
+              <!--{{valorEntradas | currency: {pt-BR | BRL }}} -->
+              R$ 5000,00
+            </div>
+            <div class="col-12">
+              %52+ desde o último mês
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>

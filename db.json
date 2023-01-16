@@ -1,0 +1,10 @@
+{
+  "Lancamentos": {
+    "id": 1,
+    "dataHora": 1673817970000,
+    "valor": 500.00,
+    "tipo": "entrada",
+    "detalhes": "",
+    "usuario": "1"
+  }
+}

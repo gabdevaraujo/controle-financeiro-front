@@ -12,6 +12,7 @@ import {CalendarModule} from 'primeng/calendar';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {CardModule} from 'primeng/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SplitButtonModule,
     CardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InputTextareaModule
   ]
 })
 export class NovoModule { }

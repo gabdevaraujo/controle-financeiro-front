@@ -1,3 +1,4 @@
+import { Lancamento } from './../model/Lancamento';
 import { MenuItem } from 'primeng/api';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -14,6 +15,7 @@ export class NovoComponent implements OnInit {
   tipoSelecionado!: Tipo;
   buttonOptions!: MenuItem[];
   form!: FormGroup;
+  lancamento!: Lancamento;
 
 
   constructor(
@@ -55,6 +57,7 @@ export class NovoComponent implements OnInit {
       subTipo: [null, Validators.required],
       valor: [null, Validators.required],
       data: [null, Validators.required],
+      detalhes: [null, Validators.required],
     })
     return this.form;
   }
